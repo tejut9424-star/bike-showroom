@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+
+nav {
+  background-color: #111;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+/* HEADINGS */
+
+h2 {
+  color: #222;
+}
+
+h3 {
+  color: #333;
+}
+
+/* BUTTONS */
+
+button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ff6600;
+}
+
+/* INPUTS */
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: orange;
+}
+
+/* LINKS */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS */
+
+ul {
+  text-align: left;
+  display: inline-block;
+}
+
+li {
+  margin: 8px 0;
+}
+
+/* PRODUCT DETAILS IMAGE */
+
+img {
+  border-radius: 8px;
+}
+
+/* CATEGORY LINKS */
+
+div a {
+  font-weight: bold;
+  color: #222;
+}
+
+div a:hover {
+  color: orange;
+}
+
+/* CART TOTAL */
+
+h3:last-of-type {
+  background-color: #111;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}

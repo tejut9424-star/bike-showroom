@@ -1,0 +1,229 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: radial-gradient(circle at top, #111 0%, #0a0a0f 100%);
+  color: #e5e7eb;
+  min-height: 100vh;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+nav {
+  background: linear-gradient(135deg, #111111, #1a1a1a);
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #ff002b;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
+
+nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 12px;
+  transition: 0.3s;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  color: #ff002b;
+  background: rgba(255, 0, 43, 0.1);
+  transform: scale(1.05);
+}
+
+/* CART */
+nav span {
+  background: #ff002b;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(255, 0, 43, 0.4);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1, h2, h3 {
+  text-align: center;
+  color: #f8fafc;
+  margin: 20px 0;
+}
+
+/* =========================
+   SEARCH BAR
+========================= */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-container input {
+  width: 350px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #2e2e2e;
+  background: #151515;
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-container input:focus {
+  border-color: #ff002b;
+  box-shadow: 0 0 12px rgba(255, 0, 43, 0.4);
+}
+
+/* =========================
+   PRODUCTS GRID
+========================= */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+/* =========================
+   PRODUCT CARD (BIKE SHOWROOM STYLE)
+========================= */
+.product-card {
+  background: #121212;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #1f1f1f;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  border-color: #ff002b;
+  box-shadow: 0 15px 35px rgba(255, 0, 43, 0.25);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* TEXT */
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.product-card p {
+  color: #9ca3af;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* PRICE */
+.product-card h4 {
+  color: #22c55e;
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+button {
+  background: linear-gradient(135deg, #ff002b, #ff4d6d);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin: 10px 0 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(255, 0, 43, 0.4);
+}
+
+/* =========================
+   CART PAGE
+========================= */
+.cart-container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #222;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.cart-item {
+  background: #1a1a1a;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #222;
+}
+
+.cart-total {
+  text-align: center;
+  font-size: 22px;
+  color: #22c55e;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* =========================
+   EMPTY CART
+========================= */
+.empty-cart {
+  text-align: center;
+  color: #9ca3af;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .search-container input {
+    width: 90%;
+  }
+
+  .products-container {
+    grid-template-columns: 1fr;
+  }
+}
