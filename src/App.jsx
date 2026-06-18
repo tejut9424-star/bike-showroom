@@ -22,9 +22,9 @@ import Categories, {
   Accessories,
   Scooters,
   TouringBikes,
-} from "./Categories";
+} from "./categories";
 
-import products from "./products";
+import products from "./Products";
 import { CartContext } from "./CartContext";
 
 /* =========================
